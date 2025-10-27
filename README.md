@@ -8,14 +8,14 @@ Each script processes a dataset of 57 images across 4 folders — *cats*, *dogs*
 
 ## 📂 Folder Structure
 
-images_dataset/    
-output_seq/               
-output_parallel/          
-output_distributed/       
-sequential_process.py     
-parallel_process.py       
-distributed_sim.py        
-report.txt               
+├──images_dataset/    
+├──output_seq/               
+├──output_parallel/          
+├──output_distributed/       
+├──sequential_process.py     
+├──parallel_process.py       
+├──distributed_sim.py        
+├──report.txt               
 README.md                 
 
 
