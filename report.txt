@@ -1,0 +1,16 @@
+Parallel and Distributed Computing — Image Processing Report
+-------------------------------------------------------------
+
+| Method          | Time (s) | Speedup |
+|-----------------|----------|---------|
+| Sequential      | 0.31     | 1.00x   |
+| Parallel (2)    | 0.32     | 0.97x   |
+| Parallel (4)    | 0.31     | 1.00x   |
+| Parallel (8)    | 0.40     | 0.78x   |
+| Distributed     | 0.39     | 0.79x   |
+
+Best number of workers: 4
+Explanation: With 4 workers, the CPU cores were efficiently utilized without extra overhead. Increasing beyond that (to 8 workers) added slight synchronization and process management delays, reducing overall performance.
+
+Discussion:
+Parallelism improved performance by dividing the workload across multiple cores, allowing simultaneous image processing. However, because the dataset is small and disk I/O (reading/writing images) dominates total time, the gains are modest. The distributed simulation demonstrated logical task division between nodes but showed similar performance due to co
